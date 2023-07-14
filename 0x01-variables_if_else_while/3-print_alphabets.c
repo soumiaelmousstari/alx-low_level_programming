@@ -7,13 +7,14 @@
 int main(void)
 {
 	int a = 97;
+	int b = 65;
 
 	while (a <= 122)
 	{
 		putchar(a);
 		a++;
 	}
-	while (a <= 90)
+	while (b <= 90)
 	{
 		putchar(a);
 	}
