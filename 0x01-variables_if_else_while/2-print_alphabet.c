@@ -5,8 +5,12 @@
 */
 int main(void)
 {
-	char a;
+	int a = 90;
 
-	putchar(a);
+	while (a <= 122)
+	{
+		putchar(a);
+		a++;
+	}
 return (0);
 }
