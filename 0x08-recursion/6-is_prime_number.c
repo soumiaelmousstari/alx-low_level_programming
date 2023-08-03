@@ -2,11 +2,11 @@
 #include <stdio.h>
 int check_prime(int n, int i);
 /**
- * _is_prime_numbre -Returnsif a number is prime
+ * is_prime_numbre -Returnsif a number is prime
  * @n: the number to be checked
  * Return: integer value
 */
-int _is_prime_numbre(int n)
+int is_prime_numbre(int n)
 {
 	return (check_prime(n, 1));
 }
