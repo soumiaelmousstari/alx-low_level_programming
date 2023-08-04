@@ -1,7 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _putchar -writes the character 
+ * _putchar -writes the character
+ * @c: the char
  * Return: 1 succss, -1 on error
 */
 int _putchar(char c)
