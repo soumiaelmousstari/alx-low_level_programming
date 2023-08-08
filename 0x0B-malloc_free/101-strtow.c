@@ -73,8 +73,8 @@ char **strtow(char *str)
 			return (NULL);
 		}
 		for (l = 0; l < letters; l++)
-		strings[w][l] = str[index++];
-		strings[w][1] = '\0';
+			strings[w][l] = str[index++];
+		strings[w][l] = '\0';
 	}
 	strings[w] = NULL;
 	return (strings);
