@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * free_grid -...
- * @grid: ...
- * @height: ...
+ * free_grid -a function that frees a 2 dimensional
+ * grid previously created by your alloc_grid function.
+ * @grid: the first argument
+ * @height: the second argument
  * Return: ...
 */
 void free_grid(int **grid, int height)
