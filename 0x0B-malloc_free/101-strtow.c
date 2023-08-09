@@ -40,6 +40,7 @@ int count_words(char *str)
 		}
 	}
 	return (words);
+}
 /**
  * strtow -Splits a string into words.
  * @str: The string to be split.
