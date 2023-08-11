@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
 		argv[2] = iterate_zeroes(argv[2]);
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
-		printf("\n");
+		printf("0\n");
 		return (0);
 	}
 	size = find_len(argv[1]) + find_len(argv[2]);
