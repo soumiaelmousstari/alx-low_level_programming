@@ -18,6 +18,7 @@ int find_len(char *str)
 	while (*str++)
 		len++;
 	return (len);
+}
 /**
  * create_xarray -Creates an array of chars and initializes it whith
  * the character 'x'. Adds a terminating null byte.
@@ -61,7 +62,7 @@ int get_digit(char c)
 {
 	int digit = c - '0';
 
-	if (digit || digit > 9)
+	if (digit < 0 || digit > 9)
 	{
 		printf("Error\n");
 		exit(98);
@@ -110,6 +111,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		*prod = (tens % 10) + '0';
 }
 /**
+ * A
 * add_nums -Adds the numbers stored in two strings.
 * @final_prod: The buffer storing the running final product
 * @next_prod: The next product to be added.
