@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	array = (char *)main;
-	for (i = 0; i < byte; i++)
+	for (index = 0; index < byte; index++)
 	{
-		if (i == byte - 1)
+		if (index == byte - 1)
 		{
 			printf("%02hhx\n", array[1]);
 			break;
