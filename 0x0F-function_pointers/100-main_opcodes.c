@@ -27,11 +27,10 @@ int main(int argc, char *argv[])
 	{
 		if (index == byte - 1)
 		{
-			printf("%02hhx ", array[index]);
+			printf("%02hhx%s", *array++, index ? " " : "\n");
 			break;
 		}
-		printf("%02hhx ", array[index]);
+		printf("%02hhx%s", *array++, index ? " " : "\n");
 	}
-	printf("\n");
 	return (0);
 }
