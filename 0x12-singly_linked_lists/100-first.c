@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 void priintf_before_main(void) __attribute__((constructor));
+
 /**
  * print_before_main -a function that prints
  * You're beat! and yet, you must allow,\nI
