@@ -7,6 +7,7 @@ section .text
 main:
 	mov r, msg
 	call printf
+	mov r, newline
+	call printf
 	xor r, r
-	mov r, 0
 	ret
