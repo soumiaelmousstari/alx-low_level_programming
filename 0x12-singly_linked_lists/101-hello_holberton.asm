@@ -8,4 +8,5 @@ main:
 	mov r, msg
 	call printf
 	xor r, r
+	mov r, 0
 	ret
