@@ -11,15 +11,15 @@
 */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listitn_t *p, *fin;
+	listint_t *p, *fin;
 
 	if (head == NULL)
 		return (NULL);
-	for (fin = head->next; fin != NULL, fin = fin->next)
+	for (fin = head->next; fin != NULL; fin = fin->next)
 	{
 		if (fin == fin->next)
 			return (fin);
-		for (p == fin->next)
+		for (p = head; p != fin; p = p->next)
 			if (p == fin->next)
 				return (fin->next);
 	}
