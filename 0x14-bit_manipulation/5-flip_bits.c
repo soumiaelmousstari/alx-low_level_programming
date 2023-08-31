@@ -17,7 +17,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (xorl & 1ul)
 			c++;
-		xorl = xorl >> 1
+		xorl = xorl >> 1;
 	}
 	return (c);
 }
