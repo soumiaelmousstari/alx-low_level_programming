@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 /**
  * read_textfile -a function that reads a text file and
@@ -10,17 +8,26 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int f;
+	int fd;
 	ssize_t bytes;
-	char b[READ_B_SIZE * 8];
+	char buf[READ_SIZE * 8];
 
 	if (!filename || !letters)
 		return (0);
-	f = open(filename, O_RDONLY);
-	if (f == -1)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
-	bytes = read(f, &b[0], letters);
-	bytes = write(STDOUT_FILENO, &b[0], bytes);
-	close(f);
+	bytes = read(fd, buf, letters);
+	if (bytes == -1)
+	{
+		close(fd);
+		return (0);
+	}
+	if (write(STDOUT_FILENO, but, bytes) == -1)
+	{
+		close(fd);
+		return (0);
+	}
+	close(fd);
 	return (bytes);
 }
